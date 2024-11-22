@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets') }}/images/favicon.png">
     <!-- Custom Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ asset('assets') }}/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -40,11 +40,11 @@
         ***********************************-->
         <div class="nav-header">
             <div class="brand-logo">
-                <a href="index.html">
-                    <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
-                    <span class="logo-compact"><img src="./images/logo-compact.png" alt=""></span>
+                <a href="home">
+                    <b class="logo-abbr"><img src="{{ asset('assets') }}/images/logo.png" alt=""> </b>
+                    <span class="logo-compact"><img src="{{ asset('assets') }}/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
-                        <img src="images/logo-text.png" alt="">
+                        <img src="{{ asset('assets') }}/images/logo-text.png" alt="">
                     </span>
                 </a>
             </div>
@@ -92,7 +92,7 @@
                                     <ul>
                                         <li class="notification-unread">
                                             <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="{{ asset('assets') }}/images/avatar/1.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Saiful Islam</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -102,7 +102,7 @@
                                         </li>
                                         <li class="notification-unread">
                                             <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="images/avatar/2.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="{{ asset('assets') }}/images/avatar/2.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Adam Smith</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -112,7 +112,7 @@
                                         </li>
                                         <li>
                                             <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="images/avatar/3.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="{{ asset('assets') }}/images/avatar/3.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Barak Obama</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -122,7 +122,7 @@
                                         </li>
                                         <li>
                                             <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="images/avatar/4.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="{{ asset('assets') }}/images/avatar/4.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Hilari Clinton</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -203,23 +203,23 @@
                         <li class="icons dropdown">
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
-                                <img src="images/user/1.png" height="40" width="40" alt="">
+                                <img src="{{ asset('assets') }}/images/user/1.png" height="40" width="40" alt="">
                             </div>
                             <div class="drop-down dropdown-profile   dropdown-menu">
                                 <div class="dropdown-content-body">
                                     <ul>
                                         <li>
-                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Profile</span></a>
+                                            <a href="app-profile"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
                                         <li>
-                                            <a href="email-inbox.html"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                            <a href="email-inbox"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
                                         </li>
                                         
                                         <hr class="my-2">
                                         <li>
-                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                            <a href="page-lock"><i class="icon-lock"></i> <span>Lock Screen</span></a>
                                         </li>
-                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                        <li><a href="page-login"><i class="icon-key"></i> <span>Logout</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -244,8 +244,8 @@
                             <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./index.html">Home 1</a></li>
-                            <!-- <li><a href="./index-2.html">Home 2</a></li> -->
+                            <li><a href="home">Home 1</a></li>
+                            <!-- <li><a href="home-2">Home 2</a></li> -->
                         </ul>
                     </li>
                     <li class="mega-menu mega-menu-sm">
@@ -253,18 +253,18 @@
                             <i class="icon-globe-alt menu-icon"></i><span class="nav-text">Layouts</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./layout-blank.html">Blank</a></li>
-                            <li><a href="./layout-one-column.html">One Column</a></li>
-                            <li><a href="./layout-two-column.html">Two column</a></li>
-                            <li><a href="./layout-compact-nav.html">Compact Nav</a></li>
-                            <li><a href="./layout-vertical.html">Vertical</a></li>
-                            <li><a href="./layout-horizontal.html">Horizontal</a></li>
-                            <li><a href="./layout-boxed.html">Boxed</a></li>
-                            <li><a href="./layout-wide.html">Wide</a></li>
+                            <li><a href="layout-blank">Blank</a></li>
+                            <li><a href="layout-one-column">One Column</a></li>
+                            <li><a href="layout-two-column">Two column</a></li>
+                            <li><a href="layout-compact-nav">Compact Nav</a></li>
+                            <li><a href="layout-vertical">Vertical</a></li>
+                            <li><a href="layout-horizontal">Horizontal</a></li>
+                            <li><a href="layout-boxed">Boxed</a></li>
+                            <li><a href="layout-wide">Wide</a></li>
                             
                             
-                            <li><a href="./layout-fixed-header.html">Fixed Header</a></li>
-                            <li><a href="layout-fixed-sidebar.html">Fixed Sidebar</a></li>
+                            <li><a href="layout-fixed-header">Fixed Header</a></li>
+                            <li><a href="layout-fixed-sidebar">Fixed Sidebar</a></li>
                         </ul>
                     </li>
                     <li class="nav-label">Apps</li>
@@ -273,9 +273,9 @@
                             <i class="icon-envelope menu-icon"></i> <span class="nav-text">Email</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./email-inbox.html">Inbox</a></li>
-                            <li><a href="./email-read.html">Read</a></li>
-                            <li><a href="./email-compose.html">Compose</a></li>
+                            <li><a href="email-inbox">Inbox</a></li>
+                            <li><a href="email-read">Read</a></li>
+                            <li><a href="email-compose">Compose</a></li>
                         </ul>
                     </li>
                     <li>
@@ -283,8 +283,8 @@
                             <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Apps</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./app-profile.html">Profile</a></li>
-                            <li><a href="./app-calender.html">Calender</a></li>
+                            <li><a href="app-profile">Profile</a></li>
+                            <li><a href="app-calender">Calender</a></li>
                         </ul>
                     </li>
                     <li>
@@ -292,12 +292,12 @@
                             <i class="icon-graph menu-icon"></i> <span class="nav-text">Charts</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./chart-flot.html">Flot</a></li>
-                            <li><a href="./chart-morris.html">Morris</a></li>
-                            <li><a href="./chart-chartjs.html">Chartjs</a></li>
-                            <li><a href="./chart-chartist.html">Chartist</a></li>
-                            <li><a href="./chart-sparkline.html">Sparkline</a></li>
-                            <li><a href="./chart-peity.html">Peity</a></li>
+                            <li><a href="chart-flot">Flot</a></li>
+                            <li><a href="chart-morris">Morris</a></li>
+                            <li><a href="chart-chartjs">Chartjs</a></li>
+                            <li><a href="chart-chartist">Chartist</a></li>
+                            <li><a href="chart-sparkline">Sparkline</a></li>
+                            <li><a href="chart-peity">Peity</a></li>
                         </ul>
                     </li>
                     <li class="nav-label">UI Components</li>
@@ -306,22 +306,22 @@
                             <i class="icon-grid menu-icon"></i><span class="nav-text">UI Components</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./ui-accordion.html">Accordion</a></li>
-                            <li><a href="./ui-alert.html">Alert</a></li>
-                            <li><a href="./ui-badge.html">Badge</a></li>
-                            <li><a href="./ui-button.html">Button</a></li>
-                            <li><a href="./ui-button-group.html">Button Group</a></li>
-                            <li><a href="./ui-cards.html">Cards</a></li>
-                            <li><a href="./ui-carousel.html">Carousel</a></li>
-                            <li><a href="./ui-dropdown.html">Dropdown</a></li>
-                            <li><a href="./ui-list-group.html">List Group</a></li>
-                            <li><a href="./ui-media-object.html">Media Object</a></li>
-                            <li><a href="./ui-modal.html">Modal</a></li>
-                            <li><a href="./ui-pagination.html">Pagination</a></li>
-                            <li><a href="./ui-popover.html">Popover</a></li>
-                            <li><a href="./ui-progressbar.html">Progressbar</a></li>
-                            <li><a href="./ui-tab.html">Tab</a></li>
-                            <li><a href="./ui-typography.html">Typography</a></li>
+                            <li><a href="ui-accordion">Accordion</a></li>
+                            <li><a href="ui-alert">Alert</a></li>
+                            <li><a href="ui-badge">Badge</a></li>
+                            <li><a href="ui-button">Button</a></li>
+                            <li><a href="ui-button-group">Button Group</a></li>
+                            <li><a href="ui-cards">Cards</a></li>
+                            <li><a href="ui-carousel">Carousel</a></li>
+                            <li><a href="ui-dropdown">Dropdown</a></li>
+                            <li><a href="ui-list-group">List Group</a></li>
+                            <li><a href="ui-media-object">Media Object</a></li>
+                            <li><a href="ui-modal">Modal</a></li>
+                            <li><a href="ui-pagination">Pagination</a></li>
+                            <li><a href="ui-popover">Popover</a></li>
+                            <li><a href="ui-progressbar">Progressbar</a></li>
+                            <li><a href="ui-tab">Tab</a></li>
+                            <li><a href="ui-typography">Typography</a></li>
                         <!-- </ul>
                     </li>
                     <li>
@@ -329,14 +329,14 @@
                             <i class="icon-layers menu-icon"></i><span class="nav-text">Components</span>
                         </a>
                         <ul aria-expanded="false"> -->
-                            <li><a href="./uc-nestedable.html">Nestedable</a></li>
-                            <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
-                            <li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
-                            <li><a href="./uc-toastr.html">Toastr</a></li>
+                            <li><a href="uc-nestedable">Nestedable</a></li>
+                            <li><a href="uc-noui-slider">Noui Slider</a></li>
+                            <li><a href="uc-sweetalert">Sweet Alert</a></li>
+                            <li><a href="uc-toastr">Toastr</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="widgets.html" aria-expanded="false">
+                        <a href="widgets" aria-expanded="false">
                             <i class="icon-badge menu-icon"></i><span class="nav-text">Widget</span>
                         </a>
                     </li>
@@ -346,11 +346,11 @@
                             <i class="icon-note menu-icon"></i><span class="nav-text">Forms</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./form-basic.html">Basic Form</a></li>
-                            <li><a href="./form-validation.html">Form Validation</a></li>
-                            <li><a href="./form-step.html">Step Form</a></li>
-                            <li><a href="./form-editor.html">Editor</a></li>
-                            <li><a href="./form-picker.html">Picker</a></li>
+                            <li><a href="form-basic">Basic Form</a></li>
+                            <li><a href="form-validation">Form Validation</a></li>
+                            <li><a href="form-step">Step Form</a></li>
+                            <li><a href="form-editor">Editor</a></li>
+                            <li><a href="form-picker">Picker</a></li>
                         </ul>
                     </li>
                     <li class="nav-label">Table</li>
@@ -359,8 +359,8 @@
                             <i class="icon-menu menu-icon"></i><span class="nav-text">Table</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./table-basic.html" aria-expanded="false">Basic Table</a></li>
-                            <li><a href="./table-datatable.html" aria-expanded="false">Data Table</a></li>
+                            <li><a href="table-basic" aria-expanded="false">Basic Table</a></li>
+                            <li><a href="table-datatable" aria-expanded="false">Data Table</a></li>
                         </ul>
                     </li>
                     <li class="nav-label">Pages</li>
@@ -369,16 +369,16 @@
                             <i class="icon-notebook menu-icon"></i><span class="nav-text">Pages</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./page-login.html">Login</a></li>
-                            <li><a href="./page-register.html">Register</a></li>
-                            <li><a href="./page-lock.html">Lock Screen</a></li>
+                            <li><a href="page-login">Login</a></li>
+                            <li><a href="page-register">Register</a></li>
+                            <li><a href="page-lock">Lock Screen</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="./page-error-404.html">Error 404</a></li>
-                                    <li><a href="./page-error-403.html">Error 403</a></li>
-                                    <li><a href="./page-error-400.html">Error 400</a></li>
-                                    <li><a href="./page-error-500.html">Error 500</a></li>
-                                    <li><a href="./page-error-503.html">Error 503</a></li>
+                                    <li><a href="page-error-404">Error 404</a></li>
+                                    <li><a href="page-error-403">Error 403</a></li>
+                                    <li><a href="page-error-400">Error 400</a></li>
+                                    <li><a href="page-error-500">Error 500</a></li>
+                                    <li><a href="page-error-503">Error 503</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -555,14 +555,14 @@
     <!--**********************************
         Scripts
     ***********************************-->
-    <script src="plugins/common/common.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/gleek.js"></script>
-    <script src="js/styleSwitcher.js"></script>
+    <script src="{{ asset('assets') }}/plugins/common/common.min.js"></script>
+    <script src="{{ asset('assets') }}/js/custom.min.js"></script>
+    <script src="{{ asset('assets') }}/js/settings.js"></script>
+    <script src="{{ asset('assets') }}/js/gleek.js"></script>
+    <script src="{{ asset('assets') }}/js/styleSwitcher.js"></script>
 
-    <script src="./plugins/validation/jquery.validate.min.js"></script>
-    <script src="./plugins/validation/jquery.validate-init.js"></script>
+    <script src="{{ asset('assets') }}/plugins/validation/jquery.validate.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/validation/jquery.validate-init.js"></script>
 
 </body>
 

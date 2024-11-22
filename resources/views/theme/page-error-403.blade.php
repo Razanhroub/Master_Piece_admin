@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets') }}/images/favicon.png">
+    <link href="{{ asset('assets') }}/css/style.css" rel="stylesheet">
     
 </head>
 
@@ -41,7 +41,7 @@
                                 <p>Your Request resulted in an error.</p>
                                 <form class="mt-5 mb-5">
                                     
-                                    <div class="text-center mb-4 mt-4"><a href="index.html" class="btn btn-primary">Go to Homepage</a>
+                                    <div class="text-center mb-4 mt-4"><a href="home" class="btn btn-primary">Go to Homepage</a>
                                     </div>
                                 </form>
                                 <div class="text-center">
@@ -81,7 +81,7 @@
                                 <p>Your Request resulted in an error.</p>
                                 <form class="mt-5 mb-5">
                                     
-                                    <div class="text-center mb-4 mt-4"><a href="index.html" class="btn btn-primary">Go to Homepage</a>
+                                    <div class="text-center mb-4 mt-4"><a href="home" class="btn btn-primary">Go to Homepage</a>
                                     </div>
                                 </form>
                                 <div class="text-center">
@@ -110,11 +110,11 @@
     <!--**********************************
         Scripts
     ***********************************-->
-    <script src="plugins/common/common.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/gleek.js"></script>
-    <script src="js/styleSwitcher.js"></script>
+    <script src="{{ asset('assets') }}/plugins/common/common.min.js"></script>
+    <script src="{{ asset('assets') }}/js/custom.min.js"></script>
+    <script src="{{ asset('assets') }}/js/settings.js"></script>
+    <script src="{{ asset('assets') }}/js/gleek.js"></script>
+    <script src="{{ asset('assets') }}/js/styleSwitcher.js"></script>
 </body>
 </html>
 
