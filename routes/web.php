@@ -33,7 +33,6 @@ Route::controller(ThemeController::class)->group(function () {
 
     Route::get('/app-calender','appcalendar');
     Route::get('/app-profile','appprofile');
-    Route::get('/layout-blank','blank');
     Route::get('/chart-morris','chartmorris');
     Route::get('/form-validation','formvalidation');
     Route::get('/home','home');
@@ -46,6 +45,7 @@ Route::controller(ThemeController::class)->group(function () {
     Route::get('/table-basic','tablebasic');
     Route::get('/table-datatable','tabledatatable');
     Route::get('/uc-sweetalert','ucsweetalert');
+    Route::get('master','master');
     
    
 });

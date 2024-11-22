@@ -16,12 +16,6 @@ class ThemeController extends Controller
         return view("theme.app-profile");
     }
     
-    public function blank(){
-        // return view for the blank page after the route
-        return view("theme.blank");
-    }
-    
-    
     public function chartmorris(){
         // return view for the Morris chart after the route
         return view("theme.chart-morris");
@@ -80,5 +74,10 @@ class ThemeController extends Controller
         // return view for the SweetAlert component after the route
         return view("theme.uc-sweetalert");
     }
+    public function master(){
+        // return view for the SweetAlert component after the route
+        return view("theme.master");
+    }
+    
    
 }
